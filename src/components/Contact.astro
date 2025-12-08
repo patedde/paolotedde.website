@@ -1,0 +1,68 @@
+---
+import siteContent from '../data/siteContent.json';
+const { personalInfo } = siteContent;
+---
+
+<section id="contatti" class="bg-gradient-to-br from-dark-navy to-gray-900 text-white py-20">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+        Parliamo del tuo Progetto
+      </h2>
+      <p class="text-lg text-gray-300">
+        Contattami per una consulenza gratuita. Rispondo in 24 ore.
+      </p>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 sm:p-10 border border-white/20">
+      <!-- Language Skills Highlight -->
+      <div class="flex items-center justify-center gap-3 mb-8 pb-8 border-b border-white/20">
+        <svg class="w-6 h-6 text-blue-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+        <div class="text-center">
+          <p class="font-semibold">Italiano Nativo • Inglese C2 Certificato • Francese</p>
+          <p class="text-sm text-gray-300 mt-1">Comunicazione perfetta con clienti internazionali</p>
+        </div>
+      </div>
+
+      <!-- Contact Methods -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Email -->
+        <a
+          href={`mailto:${personalInfo.email}`}
+          class="flex items-center gap-4 p-6 bg-white/5 hover:bg-white/10 rounded-xl transition-all border border-white/10 hover:border-white/20"
+        >
+          <div class="w-12 h-12 bg-accent-blue/20 rounded-lg flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-blue-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div class="text-left">
+            <div class="text-sm text-gray-300 mb-1">Email</div>
+            <div class="font-medium">{personalInfo.email}</div>
+          </div>
+        </a>
+
+        <!-- LinkedIn -->
+        <a
+          href={`https://${personalInfo.linkedin}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-4 p-6 bg-white/5 hover:bg-white/10 rounded-xl transition-all border border-white/10 hover:border-white/20"
+        >
+          <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-blue-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div class="text-left">
+            <div class="text-sm text-gray-300 mb-1">LinkedIn</div>
+            <div class="font-medium">Profilo Professionale</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Location -->
+      <div class="mt-8 text-center">
+        <p class="text-sm text-gray-400">
+          Basato in {personalInfo.location} • Disponibile per progetti in tutta Italia
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

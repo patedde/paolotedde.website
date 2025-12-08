@@ -1,0 +1,30 @@
+---
+import siteContent from '../data/siteContent.json';
+const { trustSignals } = siteContent;
+
+const iconSVGs = {
+  ShieldCheck: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>',
+  Globe: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>',
+  Cpu: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>',
+};
+---
+
+<section class="bg-white border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {trustSignals.map((signal) => (
+        <div class="flex flex-col items-center text-center p-6 rounded-lg hover:bg-gray-50 transition-colors">
+          <div class="w-12 h-12 flex items-center justify-center bg-accent-blue/10 rounded-lg mb-4">
+            <div class="w-6 h-6 text-accent-blue" set:html={iconSVGs[signal.icon as keyof typeof iconSVGs]} />
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">
+            {signal.title}
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            {signal.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

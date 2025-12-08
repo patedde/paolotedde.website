@@ -1,0 +1,40 @@
+---
+import siteContent from '../data/siteContent.json';
+const { name } = siteContent.personalInfo;
+---
+
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="#" class="text-xl font-bold text-gray-900 hover:text-accent-blue transition-colors">
+          {name}
+        </a>
+      </div>
+
+      <!-- Navigation Links (hidden on mobile) -->
+      <div class="hidden md:flex space-x-8">
+        <a href="#servizi" class="text-gray-700 hover:text-accent-blue transition-colors font-medium">
+          Servizi
+        </a>
+        <a href="#about" class="text-gray-700 hover:text-accent-blue transition-colors font-medium">
+          Chi Sono
+        </a>
+        <a href="#tech" class="text-gray-700 hover:text-accent-blue transition-colors font-medium">
+          Tecnologie
+        </a>
+      </div>
+
+      <!-- CTA Button -->
+      <div>
+        <a
+          href="#contatti"
+          class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-accent-blue hover:bg-blue-600 transition-colors shadow-sm"
+        >
+          Contattami
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

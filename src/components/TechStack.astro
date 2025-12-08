@@ -1,0 +1,48 @@
+---
+const technologies = [
+  // Row 1
+  { name: 'Unity', color: 'from-gray-700 to-gray-900' },
+  { name: 'C#', color: 'from-purple-600 to-purple-800' },
+  { name: 'ARCore', color: 'from-green-500 to-green-700' },
+  { name: 'IA', color: 'from-teal-500 to-teal-700' },
+  { name: 'Astro', color: 'from-orange-500 to-red-600' },
+  
+  // Row 2 (New Items)
+  { name: 'Tailwind CSS', color: 'from-cyan-500 to-blue-600' },
+  { name: 'Firebase', color: 'from-yellow-500 to-orange-600' },
+  { name: 'Flutter', color: 'from-blue-400 to-cyan-400' },
+  { name: 'Git', color: 'from-red-600 to-orange-600' },
+  { name: 'RESTful API', color: 'from-indigo-600 to-blue-800' },
+];
+---
+
+<section id="tech" class="bg-gray-50 py-16 border-t border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+        Stack Tecnologico
+      </h2>
+      <p class="text-gray-600">
+        Strumenti professionali per risultati di livello enterprise
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+      {technologies.map((tech) => (
+        <div class="group">
+          <div class={`bg-gradient-to-br ${tech.color} rounded-xl p-6 text-white text-center shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex items-center justify-center`}>
+            <div class="font-semibold text-sm sm:text-base">
+              {tech.name}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 text-center">
+      <p class="text-sm text-gray-500">
+        E molte altre tecnologie per creare soluzioni su misura
+      </p>
+    </div>
+  </div>
+</section>

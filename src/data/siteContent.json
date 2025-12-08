@@ -1,0 +1,87 @@
+{
+  "personalInfo": {
+    "name": "Paolo Tedde",
+    "role": "Digital Solutions Consultant",
+    "tagline": "Ex-Microsoft & SEGA",
+    "location": "Sardegna, Italia",
+    "email": "patedde@proton.me",
+    "linkedin": "linkedin.com/in/paolo-tedde"
+  },
+  "hero": {
+    "title": "La qualità del Software Internazionale nella tua attività locale",
+    "subtitle": "Siti Web ad alte prestazioni, app funzionali e soluzioni in Realtà Aumentata. L'esperienza di un ex-Project Manager in multinazionali del software, al servizio delle imprese sarde.",
+    "ctaPrimary": "Scopri i Servizi",
+    "ctaSecondary": "Richiedi Analisi Gratuita"
+  },
+  "trustSignals": [
+    {
+      "title": "Qualità Certificata",
+      "description": "Oltre 10 anni in QA per giganti come Microsoft, SEGA e UNGUESS. Non consegno progetti con bug.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Visibilità Internazionale",
+      "description": "Esperto in localizzazione. Il tuo sito parlerà perfettamente al turista straniero, non come Google Translate.",
+      "icon": "Globe"
+    },
+    {
+      "title": "Tecnologia Avanzata",
+      "description": "Sviluppo in C# e Unity. Porto innovazioni come la Realtà Aumentata (AR) nel tuo business.",
+      "icon": "Cpu"
+    }
+  ],
+  "services": [
+    {
+      "id": "tourism",
+      "title": "Ecosistemi per il Turismo & Prenotazioni Dirette",
+      "target": "Case Vacanze, B&B, Property Manager",
+      "description": "Strumenti progettati per disintermediare le grandi piattaforme (OTA) e recuperare il margine perduto.",
+      "features": [
+        "Zero Commissioni grazie a sistemi proprietari",
+        "Localizzazione perfetta multilingue per clienti internazionali",
+        "Automazione check-in, prenotazioni e messaggistica WhatsApp"
+      ]
+    },
+    {
+      "id": "webar",
+      "title": "Visualizzazione Prodotti & WebAR",
+      "target": "Artigiani, Arredatori, Showroom",
+      "description": "Riduci l'incertezza d'acquisto permettendo ai clienti di 'provare' i tuoi prodotti nel loro ambiente.",
+      "features": [
+        "Visualizzazione 3D direttamente nel browser",
+        "Nessuna App da scaricare",
+        "Modelli ottimizzati tramite la Computer Vision"
+      ]
+    },
+    {
+      "id": "labels",
+      "title": "Packaging Narrativo & Etichette Parlanti",
+      "target": "Cantine, Caseifici, Agroalimentare",
+      "description": "Racconta la storia del tuo prodotto artigianale trasformando l'etichetta in un'esperienza digitale.",
+      "features": [
+        "Storytelling video in Realtà Aumentata",
+        "Esperienza Premium per elevare il tuo prodotto",
+        "Link diretto all'e-commerce dal prodotto fisico"
+      ]
+    },
+    {
+      "id": "bespoke",
+      "title": "Sviluppo App su Misura",
+      "target": "PMI, Professionisti, Startup",
+      "description": "Ascolto il problema specifico che affronti nel tuo lavoro quotidiano e sviluppo soluzioni software personalizzate per risolverlo in modo efficiente.",
+      "features": [
+        "Analisi approfondita del problema e delle tue esigenze",
+        "Sviluppo rapido di prototipi funzionanti",
+        "Applicazioni desktop, web o mobile su misura"
+      ]
+    }
+  ],
+  "jollyService": {
+    "title": "Audit Tecnico & QA",
+    "description": "Hai bisogno di sistemare un sito rotto o obsoleto? Con la mia esperienza nel controllo qualità, analizzo sicurezza e performance. Se c'è un bug, lo trovo."
+  },
+  "about": {
+    "title": "Dal Global al Local",
+    "text": "Sono Paolo, uno sviluppatore con un background ibrido e variegato. Ho passato anni nel Regno Unito a gestire la qualità del software e la localizzazione per prodotti tripla-A in grandi studi di sviluppo come SEGA, Microsoft e Creative Assembly. Ho imparato che un dettaglio fuori posto può costare caro. Oggi uso gli strumenti piu' avanzati per portare quella stessa disciplina alle imprese locali, offrendo soluzioni che funzionano, vendono e stupiscono."
+  }
+}

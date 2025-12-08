@@ -1,0 +1,150 @@
+---
+import siteContent from '../data/siteContent.json';
+const { services } = siteContent;
+
+const gradientClasses = [
+  'from-blue-500 to-indigo-600',
+  'from-purple-500 to-pink-600',
+  'from-orange-500 to-red-600',
+  'from-green-500 to-teal-600',
+];
+
+const serviceImages = [
+  '/images/Webdev.png',
+  '/images/AR_obj.png',
+  '/images/AR_lab.png',
+  '/images/appdev.png',
+];
+---
+
+<section id="servizi" class="bg-gray-50 py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        Soluzioni su Misura
+      </h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Ogni servizio è pensato per risolvere un problema specifico del tuo business
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      {services.map((service, index) => (
+        /* Added 'group' class for easier styling reference if needed, though strictly not required for this logic */
+        <div class={`flip-card h-[400px] ${index === 3 ? 'lg:col-start-2 xl:col-start-auto' : ''}`}>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src={serviceImages[index]}
+                alt={service.title}
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex items-end">
+                <div class="p-6 w-full">
+                  <div class="inline-flex items-center px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full mb-2">
+                    <span class="text-xs font-semibold text-gray-800">{service.target}</span>
+                  </div>
+                  <h3 class="text-xl font-bold text-white leading-tight">
+                    {service.title}
+                  </h3>
+                  <p class="md:hidden text-xs text-white/70 mt-2">Tocca per dettagli</p>
+                </div>
+              </div>
+            </div>
+
+            <div class={`flip-card-back bg-gradient-to-br ${gradientClasses[index]} text-white`}>
+              <div class="h-full flex flex-col p-6">
+                <div class="inline-flex items-center px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full mb-3 self-start">
+                  <span class="text-xs font-semibold">{service.target}</span>
+                </div>
+                <h3 class="text-xl font-bold leading-tight mb-4">
+                  {service.title}
+                </h3>
+                <p class="text-white/90 mb-6 leading-relaxed text-sm">
+                  {service.description}
+                </p>
+                <ul class="space-y-2 mt-auto">
+                  {service.features.map((feature) => (
+                    <li class="flex items-start">
+                      <div class="flex-shrink-0 mt-0.5">
+                        <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                      </div>
+                      <span class="ml-2 text-xs text-white/90">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Select all cards
+  const cards = document.querySelectorAll('.flip-card');
+
+  cards.forEach((card) => {
+    card.addEventListener('click', () => {
+      // Toggle the 'flipped' class on click/tap
+      card.classList.toggle('flipped');
+    });
+  });
+</script>
+
+<style>
+  .flip-card {
+    perspective: 1000px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent; /* Removes blue highlight on mobile tap */
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+  }
+
+  /* FLIP LOGIC:
+    1. @media (hover: hover): Only applies hover effect on devices with a mouse.
+       This prevents "sticky" hover states on mobile phones.
+    2. .flipped: Applies the rotation when the class is added by JS (on click).
+  */
+  
+  @media (hover: hover) {
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  }
+
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Shared Styling */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  .flip-card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+</style>

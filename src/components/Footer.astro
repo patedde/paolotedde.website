@@ -1,0 +1,24 @@
+---
+import siteContent from '../data/siteContent.json';
+const { personalInfo } = siteContent;
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-dark-navy text-gray-300 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <!-- Left: Copyright -->
+      <div class="text-sm text-center md:text-left">
+        <p>&copy; {currentYear} {personalInfo.name}. Tutti i diritti riservati.</p>
+        <p class="text-gray-500 mt-1">{personalInfo.role}</p>
+      </div>
+
+      <!-- Right: Links -->
+      <div class="flex gap-6 text-sm">
+        <a href="#servizi" class="hover:text-white transition-colors">Servizi</a>
+        <a href="#about" class="hover:text-white transition-colors">Chi Sono</a>
+        <a href="#contatti" class="hover:text-white transition-colors">Contatti</a>
+      </div>
+    </div>
+  </div>
+</footer>
