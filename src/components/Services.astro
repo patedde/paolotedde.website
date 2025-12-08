@@ -9,11 +9,14 @@ const gradientClasses = [
   'from-green-500 to-teal-600',
 ];
 
+const base = import.meta.env.BASE_URL; // This equals '/paolotedde.website/' automatically
+
+// 2. Update the array to use this variable
 const serviceImages = [
-  '/public/images/Webdev.png',
-  '/public/images/AR_obj.png',
-  '/public/images/AR_lab.png',
-  '/public/images/appdev.png',
+  `${base}images/Webdev.png`,
+  `${base}images/AR_obj.png`,
+  `${base}images/AR_lab.png`,
+  `${base}images/appdev.png`,
 ];
 ---
 
