@@ -1,0 +1,197 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import siteContent from '../data/siteContent.json';
+const { personalInfo } = siteContent;
+---
+
+<Layout title="Privacy Policy - Paolo Tedde">
+  <Navbar />
+
+  <main class="bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <!-- Header -->
+      <div class="mb-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
+        <p class="text-gray-600">Ultimo aggiornamento: {new Date().toLocaleDateString('it-IT')}</p>
+      </div>
+
+      <!-- Content -->
+      <div class="prose prose-lg max-w-none">
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">1. Introduzione</h2>
+          <p class="text-gray-700 mb-4">
+            La presente Privacy Policy descrive come {personalInfo.name} ("noi", "ci", "nostro")
+            raccoglie, utilizza e protegge le informazioni personali dei visitatori del sito web
+            situato all'indirizzo [inserire URL] (il "Sito").
+          </p>
+          <p class="text-gray-700">
+            Ci impegniamo a proteggere la privacy dei nostri visitatori e a rispettare il
+            Regolamento Generale sulla Protezione dei Dati (GDPR - Regolamento UE 2016/679).
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">2. Titolare del Trattamento</h2>
+          <p class="text-gray-700 mb-2"><strong>Titolare:</strong> {personalInfo.name}</p>
+          <p class="text-gray-700 mb-2"><strong>Email:</strong> {personalInfo.email}</p>
+          <p class="text-gray-700"><strong>Ubicazione:</strong> {personalInfo.location}</p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">3. Dati Raccolti</h2>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">3.1 Dati di Navigazione</h3>
+          <p class="text-gray-700 mb-4">
+            Durante la navigazione sul Sito, i sistemi informatici e le procedure software
+            preposte al funzionamento raccolgono alcuni dati personali la cui trasmissione è
+            implicita nell'uso dei protocolli di comunicazione Internet. Questi dati includono:
+          </p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li>Indirizzi IP o nomi a dominio dei computer utilizzati</li>
+            <li>Indirizzi in notazione URI (Uniform Resource Identifier) delle risorse richieste</li>
+            <li>Orario della richiesta</li>
+            <li>Metodo utilizzato nel sottoporre la richiesta al server</li>
+            <li>Dimensione del file ottenuto in risposta</li>
+            <li>Codice numerico indicante lo stato della risposta</li>
+            <li>Altri parametri relativi al sistema operativo e all'ambiente informatico dell'utente</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">3.2 Dati Forniti Volontariamente</h3>
+          <p class="text-gray-700 mb-4">
+            Se ci contatti attraverso il modulo di contatto o via email, raccogliamo:
+          </p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li>Nome e cognome</li>
+            <li>Indirizzo email</li>
+            <li>Numero di telefono (se fornito)</li>
+            <li>Contenuto del messaggio</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">4. Finalità del Trattamento</h2>
+          <p class="text-gray-700 mb-4">I dati personali sono trattati per le seguenti finalità:</p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><strong>Funzionamento del sito:</strong> per garantire il corretto funzionamento tecnico del Sito</li>
+            <li><strong>Risposta alle richieste:</strong> per rispondere alle tue domande e richieste di informazioni</li>
+            <li><strong>Analisi statistiche:</strong> per comprendere come viene utilizzato il Sito (solo con consenso)</li>
+            <li><strong>Adempimenti legali:</strong> per rispettare obblighi di legge, regolamento o normativa comunitaria</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">5. Base Giuridica del Trattamento</h2>
+          <p class="text-gray-700 mb-4">Il trattamento dei dati personali si basa su:</p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><strong>Interesse legittimo:</strong> per i dati di navigazione necessari al funzionamento del sito</li>
+            <li><strong>Consenso:</strong> per l'utilizzo di cookie analitici e di marketing</li>
+            <li><strong>Esecuzione di misure precontrattuali:</strong> per rispondere alle richieste di preventivo o informazioni</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Conservazione dei Dati</h2>
+          <p class="text-gray-700 mb-4">
+            I dati personali saranno conservati per il tempo strettamente necessario a conseguire
+            gli scopi per cui sono stati raccolti:
+          </p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><strong>Dati di navigazione:</strong> conservati per il tempo necessario alle finalità tecniche (massimo 7 giorni)</li>
+            <li><strong>Dati di contatto:</strong> conservati per 24 mesi dalla data dell'ultima comunicazione</li>
+            <li><strong>Cookie:</strong> secondo quanto indicato nella Cookie Policy</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">7. Condivisione dei Dati</h2>
+          <p class="text-gray-700 mb-4">
+            I tuoi dati personali non saranno venduti, affittati o ceduti a terzi.
+            Potrebbero essere condivisi solo con:
+          </p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><strong>Fornitori di servizi tecnici:</strong> per l'hosting del sito web e servizi correlati</li>
+            <li><strong>Autorità competenti:</strong> quando richiesto dalla legge</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">8. I Tuoi Diritti</h2>
+          <p class="text-gray-700 mb-4">
+            Ai sensi del GDPR, hai i seguenti diritti riguardo ai tuoi dati personali:
+          </p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><strong>Diritto di accesso:</strong> puoi richiedere informazioni sui dati che trattiamo</li>
+            <li><strong>Diritto di rettifica:</strong> puoi richiedere la correzione di dati inesatti</li>
+            <li><strong>Diritto alla cancellazione:</strong> puoi richiedere la cancellazione dei tuoi dati</li>
+            <li><strong>Diritto di limitazione:</strong> puoi richiedere la limitazione del trattamento</li>
+            <li><strong>Diritto alla portabilità:</strong> puoi richiedere i tuoi dati in formato strutturato</li>
+            <li><strong>Diritto di opposizione:</strong> puoi opporti al trattamento dei tuoi dati</li>
+            <li><strong>Diritto di revocare il consenso:</strong> puoi revocare il consenso in qualsiasi momento</li>
+          </ul>
+          <p class="text-gray-700">
+            Per esercitare questi diritti, contattaci all'indirizzo: {personalInfo.email}
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">9. Sicurezza</h2>
+          <p class="text-gray-700">
+            Adottiamo misure di sicurezza tecniche e organizzative appropriate per proteggere
+            i tuoi dati personali da accesso non autorizzato, divulgazione, alterazione o distruzione.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">10. Link a Siti Esterni</h2>
+          <p class="text-gray-700">
+            Il Sito potrebbe contenere link a siti web di terze parti. Non siamo responsabili
+            delle pratiche di privacy di questi siti esterni.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">11. Modifiche alla Privacy Policy</h2>
+          <p class="text-gray-700">
+            Ci riserviamo il diritto di modificare questa Privacy Policy in qualsiasi momento.
+            Le modifiche saranno pubblicate su questa pagina con la data di aggiornamento.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">12. Contatti</h2>
+          <p class="text-gray-700 mb-4">
+            Per qualsiasi domanda riguardante questa Privacy Policy o il trattamento dei tuoi dati personali,
+            puoi contattarci a:
+          </p>
+          <p class="text-gray-700">
+            <strong>Email:</strong> {personalInfo.email}
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">13. Autorità di Controllo</h2>
+          <p class="text-gray-700 mb-4">
+            Hai il diritto di presentare un reclamo all'Autorità Garante per la protezione dei dati personali:
+          </p>
+          <p class="text-gray-700">
+            <strong>Garante per la protezione dei dati personali</strong><br>
+            Piazza Venezia, 11 - 00187 Roma<br>
+            Tel: +39 06 696771<br>
+            Email: garante@gpdp.it<br>
+            Web: www.garanteprivacy.it
+          </p>
+        </section>
+      </div>
+
+      <!-- Back to Home -->
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <a href="/" class="text-blue-600 hover:text-blue-700 font-medium">
+          ← Torna alla Home
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

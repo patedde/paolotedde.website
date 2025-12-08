@@ -1,0 +1,200 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import siteContent from '../data/siteContent.json';
+const { personalInfo } = siteContent;
+---
+
+<Layout title="Cookie Policy - Paolo Tedde">
+  <Navbar />
+
+  <main class="bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <!-- Header -->
+      <div class="mb-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Cookie Policy</h1>
+        <p class="text-gray-600">Ultimo aggiornamento: {new Date().toLocaleDateString('it-IT')}</p>
+      </div>
+
+      <!-- Content -->
+      <div class="prose prose-lg max-w-none">
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">1. Cosa sono i Cookie</h2>
+          <p class="text-gray-700 mb-4">
+            I cookie sono piccoli file di testo che vengono memorizzati sul tuo dispositivo
+            (computer, tablet o smartphone) quando visiti un sito web. I cookie permettono al
+            sito di ricordare le tue azioni e preferenze (come login, lingua, dimensione dei
+            caratteri e altre impostazioni di visualizzazione) per un periodo di tempo, così
+            non devi reinserirle ogni volta che ritorni sul sito o navighi da una pagina all'altra.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">2. Come Utilizziamo i Cookie</h2>
+          <p class="text-gray-700 mb-4">
+            Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito web e per
+            comprendere come i visitatori utilizzano il Sito. I cookie ci aiutano a:
+          </p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li>Far funzionare correttamente il sito web</li>
+            <li>Ricordare le tue preferenze e impostazioni</li>
+            <li>Comprendere come utilizzi il nostro sito</li>
+            <li>Migliorare i nostri servizi</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">3. Tipi di Cookie Utilizzati</h2>
+
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">3.1 Cookie Necessari (Tecnici)</h3>
+            <p class="text-gray-700 mb-3">
+              Questi cookie sono essenziali per il funzionamento del sito e non possono essere
+              disabilitati nei nostri sistemi. Generalmente vengono impostati solo in risposta
+              ad azioni da te effettuate che equivalgono a una richiesta di servizi.
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <p class="text-sm text-gray-700 mb-2"><strong>Cookie di Consenso:</strong></p>
+              <ul class="list-disc pl-6 text-sm text-gray-700">
+                <li><strong>Nome:</strong> cookie_consent</li>
+                <li><strong>Scopo:</strong> Memorizza le tue preferenze sui cookie</li>
+                <li><strong>Durata:</strong> 12 mesi</li>
+                <li><strong>Tipo:</strong> First-party</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">3.2 Cookie Analitici</h3>
+            <p class="text-gray-700 mb-3">
+              Questi cookie ci permettono di contare le visite e le sorgenti di traffico, così
+              possiamo misurare e migliorare le prestazioni del nostro sito. Ci aiutano a sapere
+              quali sono le pagine più e meno popolari e a vedere come i visitatori si muovono
+              nel sito. Tutte le informazioni raccolte da questi cookie sono aggregate e quindi anonime.
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <p class="text-sm text-gray-700 mb-2"><strong>Possibili servizi di analytics:</strong></p>
+              <ul class="list-disc pl-6 text-sm text-gray-700">
+                <li>Google Analytics (se implementato)</li>
+                <li>Altri strumenti di analisi statistica</li>
+              </ul>
+              <p class="text-sm text-gray-700 mt-2">
+                <strong>Nota:</strong> Questi cookie vengono attivati solo con il tuo esplicito consenso.
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">3.3 Cookie di Marketing</h3>
+            <p class="text-gray-700 mb-3">
+              Questi cookie possono essere impostati attraverso il nostro sito dai nostri partner
+              pubblicitari. Possono essere utilizzati da queste aziende per costruire un profilo
+              dei tuoi interessi e mostrarti annunci pertinenti su altri siti.
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <p class="text-sm text-gray-700">
+                <strong>Nota:</strong> Questi cookie vengono attivati solo con il tuo esplicito consenso.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">4. Cookie di Terze Parti</h2>
+          <p class="text-gray-700 mb-4">
+            Alcuni cookie sono impostati da servizi di terze parti che compaiono sulle nostre pagine.
+            Non abbiamo controllo su questi cookie. Puoi disabilitarli direttamente attraverso
+            le impostazioni del tuo browser o attraverso le impostazioni dei cookie sul nostro sito.
+          </p>
+          <p class="text-gray-700 mb-4">Possibili servizi di terze parti:</p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><strong>Google Analytics:</strong> per l'analisi statistica (se implementato)</li>
+            <li><strong>Piattaforme social:</strong> se presenti widget di condivisione social</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">5. Gestione dei Cookie</h2>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">5.1 Attraverso il Nostro Sito</h3>
+          <p class="text-gray-700 mb-4">
+            Puoi gestire le tue preferenze sui cookie in qualsiasi momento cliccando sul
+            banner dei cookie o accedendo alle impostazioni del tuo browser.
+          </p>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">5.2 Attraverso il Browser</h3>
+          <p class="text-gray-700 mb-4">
+            Puoi controllare e/o eliminare i cookie come desideri. Puoi eliminare tutti i cookie
+            che sono già sul tuo computer e puoi impostare la maggior parte dei browser per
+            impedire che vengano salvati. Tuttavia, se lo fai, potresti dover regolare manualmente
+            alcune preferenze ogni volta che visiti un sito e alcuni servizi e funzionalità
+            potrebbero non funzionare.
+          </p>
+          <p class="text-gray-700 mb-4">Guide per i browser più comuni:</p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700">Google Chrome</a></li>
+            <li><a href="https://support.mozilla.org/it/kb/Gestione%20dei%20cookie" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700">Mozilla Firefox</a></li>
+            <li><a href="https://support.apple.com/it-it/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700">Safari</a></li>
+            <li><a href="https://support.microsoft.com/it-it/microsoft-edge" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700">Microsoft Edge</a></li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Durata dei Cookie</h2>
+          <p class="text-gray-700 mb-4">I cookie possono essere:</p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><strong>Cookie di sessione:</strong> Temporanei, vengono cancellati quando chiudi il browser</li>
+            <li><strong>Cookie persistenti:</strong> Rimangono sul tuo dispositivo fino alla scadenza o fino a quando li elimini</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">7. Revoca del Consenso</h2>
+          <p class="text-gray-700">
+            Puoi revocare il consenso all'uso dei cookie in qualsiasi momento modificando le
+            impostazioni del tuo browser o utilizzando le impostazioni dei cookie presenti sul
+            nostro sito. Ricorda che disabilitando i cookie alcune funzionalità del sito potrebbero
+            non funzionare correttamente.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">8. Modifiche alla Cookie Policy</h2>
+          <p class="text-gray-700">
+            Ci riserviamo il diritto di modificare questa Cookie Policy in qualsiasi momento.
+            Ti consigliamo di consultare regolarmente questa pagina per eventuali aggiornamenti.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">9. Contatti</h2>
+          <p class="text-gray-700 mb-4">
+            Per qualsiasi domanda riguardante questa Cookie Policy, puoi contattarci a:
+          </p>
+          <p class="text-gray-700">
+            <strong>Email:</strong> {personalInfo.email}
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">10. Link Utili</h2>
+          <p class="text-gray-700 mb-4">Per maggiori informazioni sui cookie:</p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><a href="https://www.garanteprivacy.it/cookie" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700">Garante Privacy - Cookie</a></li>
+            <li><a href="https://www.allaboutcookies.org/it/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700">All About Cookies</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Back to Home -->
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <a href="/" class="text-blue-600 hover:text-blue-700 font-medium">
+          ← Torna alla Home
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
