@@ -7,11 +7,11 @@ const basePath = '';
 ---
 
 <section class="relative bg-gradient-to-br from-dark-navy to-gray-900 text-white overflow-hidden">
-  <div class="absolute inset-0 opacity-10">
+  <div class="absolute inset-0 opacity-10 pointer-events-none">
     <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
   </div>
 
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div class="max-w-4xl">
         <div class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6">
@@ -58,5 +58,5 @@ const basePath = '';
     </div>
   </div>
 
-  <div class="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-accent-blue/20 rounded-full filter blur-3xl"></div>
+  <div class="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-accent-blue/20 rounded-full filter blur-3xl pointer-events-none"></div>
 </section>
