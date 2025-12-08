@@ -3,10 +3,8 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  // Replace with your GitHub Pages URL
-  site: 'https://patedde.github.io/paolotedde.website', 
-  // Replace with your repository name (starting with a slash)
-  base: '/paolotedde.website', 
-  
+  site: 'https://paolotedde.digital', // Update to your new domain
+  base: '/', // Change to root (or remove this line entirely)
   integrations: [tailwind()],
+
 });
