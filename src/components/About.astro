@@ -6,48 +6,58 @@ const { about, personalInfo } = siteContent;
 <section id="about" class="bg-white py-20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <!-- Left: Visual/Image Placeholder -->
       <div class="order-2 lg:order-1">
         <div class="relative">
-          <!-- Placeholder for photo - using a gradient card with icons -->
           <div class="bg-gradient-to-br from-dark-navy to-gray-800 rounded-2xl p-12 text-white shadow-xl">
-            <div class="space-y-8">
+            <div class="space-y-6">
+              
               <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-blue-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+                <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center shrink-0">
+                  <svg class="w-6 h-6 text-blue-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
                 </div>
                 <div>
                   <div class="font-semibold">Microsoft</div>
-                  <div class="text-sm text-gray-300">QA & Localization</div>
+                  <div class="text-sm text-gray-300">QA</div>
                 </div>
               </div>
+
               <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-purple-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/><rect width="20" height="12" x="2" y="6" rx="2"/></svg>
+                <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center shrink-0">
+                  <svg class="w-6 h-6 text-blue-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
                 </div>
                 <div>
                   <div class="font-semibold">SEGA</div>
+                  <div class="text-sm text-gray-300">Localization</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center shrink-0">
+                  <svg class="w-6 h-6 text-purple-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="M15 9h6"/><path d="M15 14h6"/><path d="M3 9h6"/><path d="M3 14h6"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold">Creative Assembly</div>
                   <div class="text-sm text-gray-300">Project Management</div>
                 </div>
               </div>
+
               <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-green-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center shrink-0">
+                  <svg class="w-6 h-6 text-green-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" x2="12" y1="22.08" y2="12"/></svg>
                 </div>
                 <div>
-                  <div class="font-semibold">Regno Unito</div>
-                  <div class="text-sm text-gray-300">10+ anni di esperienza internazionale</div>
+                  <div class="font-semibold">XRIT</div>
+                  <div class="text-sm text-gray-300">AR Development</div>
                 </div>
               </div>
+
             </div>
           </div>
 
-          <!-- Decorative elements -->
           <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent-blue/20 rounded-full filter blur-2xl -z-10"></div>
         </div>
       </div>
 
-      <!-- Right: Text Content -->
       <div class="order-1 lg:order-2">
         <div class="inline-flex items-center px-4 py-2 bg-gray-100 rounded-full mb-6">
           <span class="text-sm font-semibold text-gray-700">Chi Sono</span>
@@ -61,7 +71,6 @@ const { about, personalInfo } = siteContent;
           <p>{about.text}</p>
         </div>
 
-        <!-- Key highlights -->
         <div class="mt-8 flex flex-wrap gap-3">
           <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium">
             C# & Unity
