@@ -1,0 +1,75 @@
+---
+import siteContent from '../data/siteContent.json';
+
+const { portfolio } = siteContent;
+const projects = portfolio?.projects ?? [];
+---
+
+<section id="portfolio" class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        {portfolio.title}
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        {portfolio.subtitle}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projects.map((project) => (
+        <article class="rounded-xl border border-gray-200 overflow-hidden bg-white shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <div class="relative aspect-video bg-gradient-to-br from-gray-100 to-gray-200">
+            <img
+              src={project.image}
+              alt={project.name}
+              loading="lazy"
+              decoding="async"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">{project.name}</h3>
+            <p class="text-sm text-gray-600 leading-relaxed mb-4">{project.description}</p>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+              {project.stack.map((tech) => (
+                <span class="inline-flex items-center px-3 py-1 text-xs font-medium bg-blue-50 text-blue-700 rounded-full">
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md bg-accent-blue text-white hover:bg-blue-600 transition-colors"
+              >
+                Live Demo
+              </a>
+              <a
+                href={project.detailsUrl}
+                class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors"
+              >
+                Dettagli
+              </a>
+              {project.codeUrl && (
+                <a
+                  href={project.codeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors"
+                >
+                  Codice
+                </a>
+              )}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
