@@ -9,17 +9,11 @@ const gradientClasses = [
   'from-green-500 to-teal-600',
 ];
 
-// MANUAL FIX: Hardcode the base path to ensure it is correct.
-// If your repo name is 'paolotedde.website', this must be exactly '/paolotedde.website'
-const basePath = '';
-
-// NOTE: Check your 'public/images' folder. 
-// If the file is 'webdev.png' (lowercase), you MUST write 'webdev.png' here.
 const serviceImages = [
-  `${basePath}/images/Webdev.png`,   // Check if this should be webdev.png
-  `${basePath}/images/AR_obj.png`,   // Check casing
-  `${basePath}/images/AR_lab.png`,   // Check casing
-  `${basePath}/images/appdev.png`,   // Check casing
+  '/images/Webdev.png',
+  '/images/AR_obj.png',
+  '/images/AR_lab.png',
+  '/images/appdev.png',
 ];
 ---
 
@@ -34,16 +28,20 @@ const serviceImages = [
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
       {services.map((service, index) => (
-        <div class="flip-card h-[400px]">
+        /* Added 'group' class for easier styling reference if needed, though strictly not required for this logic */
+        <div class={`flip-card h-[400px] ${index === 3 ? 'lg:col-start-2 xl:col-start-auto' : ''}`}>
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img
                 src={serviceImages[index]}
                 alt={service.title}
-                class="w-full h-full object-cover"
+                width="2816"
+                height="1536"
                 loading="lazy"
+                decoding="async"
+                class="w-full h-full object-cover"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex items-end">
                 <div class="p-6 w-full">
@@ -89,9 +87,12 @@ const serviceImages = [
 </section>
 
 <script>
+  // Select all cards
   const cards = document.querySelectorAll('.flip-card');
+
   cards.forEach((card) => {
     card.addEventListener('click', () => {
+      // Toggle the 'flipped' class on click/tap
       card.classList.toggle('flipped');
     });
   });
@@ -101,7 +102,7 @@ const serviceImages = [
   .flip-card {
     perspective: 1000px;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; /* Removes blue highlight on mobile tap */
   }
 
   .flip-card-inner {
@@ -111,6 +112,12 @@ const serviceImages = [
     transition: transform 0.6s ease-in-out;
     transform-style: preserve-3d;
   }
+
+  /* FLIP LOGIC:
+    1. @media (hover: hover): Only applies hover effect on devices with a mouse.
+       This prevents "sticky" hover states on mobile phones.
+    2. .flipped: Applies the rotation when the class is added by JS (on click).
+  */
   
   @media (hover: hover) {
     .flip-card:hover .flip-card-inner {
@@ -122,6 +129,7 @@ const serviceImages = [
     transform: rotateY(180deg);
   }
 
+  /* Shared Styling */
   .flip-card-front,
   .flip-card-back {
     position: absolute;
