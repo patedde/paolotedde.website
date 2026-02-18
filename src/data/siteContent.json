@@ -4,8 +4,8 @@
     "role": "Digital Solutions Consultant",
     "tagline": "Ex-Microsoft & SEGA",
     "location": "Sardegna, Italia",
-    "email": "info@paolotedde.digital",
-    "linkedin": "www.linkedin.com/in/paolo-tedde-03317835/"
+    "email": "patedde@proton.me",
+    "linkedin": "linkedin.com/in/paolo-tedde"
   },
   "hero": {
     "title": "La qualità del Software Internazionale nella tua attività locale",
@@ -76,6 +76,39 @@
       ]
     }
   ],
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Una selezione di progetti web pubblicati. Ogni scheda include una breve descrizione, stack usato e link diretto al sito live.",
+    "projects": [
+      {
+        "name": "Project One",
+        "description": "Landing page ad alte prestazioni per promuovere un servizio locale con focus su conversioni e velocita'.",
+        "image": "/images/Webdev.png",
+        "stack": ["Astro", "Tailwind CSS", "Netlify"],
+        "liveUrl": "https://example.com",
+        "detailsUrl": "#contatti",
+        "codeUrl": ""
+      },
+      {
+        "name": "Project Two",
+        "description": "Sito vetrina responsive con contenuti multilingua e struttura SEO per una piccola attivita'.",
+        "image": "/images/AR_obj.png",
+        "stack": ["React", "Vite", "i18n"],
+        "liveUrl": "https://example.com",
+        "detailsUrl": "#contatti",
+        "codeUrl": ""
+      },
+      {
+        "name": "Project Three",
+        "description": "Portale web con prenotazioni online e pannello di gestione essenziale per il cliente finale.",
+        "image": "/images/appdev.png",
+        "stack": ["TypeScript", "Node.js", "PostgreSQL"],
+        "liveUrl": "https://example.com",
+        "detailsUrl": "#contatti",
+        "codeUrl": ""
+      }
+    ]
+  },
   "jollyService": {
     "title": "Audit Tecnico & QA",
     "description": "Hai bisogno di sistemare un sito rotto o obsoleto? Con la mia esperienza nel controllo qualità, analizzo sicurezza e performance. Se c'è un bug, lo trovo."
@@ -85,6 +118,3 @@
     "text": "Sono Paolo, uno sviluppatore con un background ibrido e variegato. Ho passato anni nel Regno Unito a gestire la qualità del software e la localizzazione per prodotti tripla-A in grandi studi di sviluppo come SEGA, Microsoft e Creative Assembly. Ho imparato che un dettaglio fuori posto può costare caro. Oggi uso gli strumenti piu' avanzati per portare quella stessa disciplina alle imprese locali, offrendo soluzioni che funzionano, vendono e stupiscono."
   }
 }
-
-
-
