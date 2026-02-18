@@ -1,6 +1,8 @@
 ---
+import { Picture } from 'astro:assets';
 import siteContent from '../data/siteContent.json';
 const { hero, personalInfo } = siteContent;
+import heroImage from '../assets/images/hero.png';
 
 // MANUAL FIX: Hardcode the base path to match your repo name
 const basePath = '';
@@ -47,9 +49,15 @@ const basePath = '';
 
       <div class="relative lg:block">
         <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src={`${basePath}/images/hero.png`}
+          <Picture
+            src={heroImage}
             alt={personalInfo.name}
+            formats={['avif', 'webp']}
+            widths={[480, 768, 1024, 1280]}
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            loading="eager"
+            fetchpriority="high"
+            quality={65}
             class="w-full h-auto object-cover"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-dark-navy/40 to-transparent"></div>
