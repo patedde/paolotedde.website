@@ -82,7 +82,7 @@
     "projects": [
       {
         "name": "Sito Web per Professionisti",
-        "description": "Sito vetrina per libero professionista, per illustrare e promuovere i suoi servizi, con focus su conversioni e accessibilità.",
+        "description": "Sviluppo di un sito vetrina per liberi professionisti finalizzato alla promozione dei servizi specialistici. L'architettura è progettata per massimizzare il tasso di conversione e garantire la piena accessibilità digitale.",
         "image": "/images/terapia.png",
         "stack": ["Astro", "Tailwind CSS", "Formspree"],
         "liveUrl": "https://www.niolaterapia.com/it/",
@@ -91,7 +91,7 @@
       },
       {
         "name": "Piattaforma di booking",
-        "description": "Sito web e piattaforma per prenotazioni di una casa vacanze, bilingue e con sistema di pagamanento professionale.",
+        "description": "Realizzazione di un ecosistema digitale per la ricezione turistica con modulo di prenotazione diretta. Architettura bilingue, integrazione di sistemi di pagamento certificati: il sito mira a disintermediare le prenotazioni dai portali terzi, migliorando i margini operativi e l'esperienza dell'utente finale.",
         "image": "/images/fiorivento.png",
         "stack": ["TypeScript", "Supabase", "Stripe"],
         "liveUrl": "https://www.ifioridelvento.com/it/",
@@ -99,8 +99,8 @@
         "codeUrl": ""
       },
       {
-        "name": "App di creazione piani elettrici",
-        "description": "App per elettricisti, che permette di caricare planimetrie, creare piani elettrici ed esportare in .pdf",
+        "name": "Tool per la schematica elettrica su planimetria",
+        "description": "App per la gestione avanzata di planimetrie digitali, permette all’utente di sovrapporre schemi elettrici direttamente su file sorgente. Grazie a un motore di esportazione integrato, il sistema genera documentazione tecnica in formato PDF, ottimizzando i tempi di progettazione.",
         "image": "/images/snap.png",
         "stack": ["JavaScript", "Vite", "React"],
         "liveUrl": "https://snap-jet-kappa.vercel.app/",
@@ -108,8 +108,8 @@
         "codeUrl": ""
       },
       {
-        "name": "App in AR per creare percorsi turistici",
-        "description": "App/Gioco in Realtà Aumentata, che permette di creare percorsi turistici interattivi utilizzando elementi geolocalizzati",
+        "name": "App in Realtà Aumentata per il city-touring interattivo.",
+        "description": "Il progetto implementa un motore di realtà aumentata sincronizzato con coordinate GPS, permettendo la sovrapposizione di elementi digitali e meccaniche di gioco su scenari reali. L'architettura consente la configurazione di percorsi turistici, dove l'interazione dell'utente attiva contenuti multimediali e sfide interattive.",
         "image": "/images/qbadoo.png",
         "stack": ["Unity", "C#", "ARCore"],
         "liveUrl": "https://www.qbadoo.world/",
@@ -127,4 +127,5 @@
     "text": "Sono Paolo, uno sviluppatore con un background ibrido e variegato. Ho passato anni nel Regno Unito a gestire la qualità del software e la localizzazione per prodotti tripla-A in grandi studi di sviluppo come SEGA, Microsoft e Creative Assembly. Ho imparato che un dettaglio fuori posto può costare caro. Oggi uso gli strumenti piu' avanzati per portare quella stessa disciplina alle imprese locali, offrendo soluzioni che funzionano, vendono e stupiscono."
   }
 }
+
 
