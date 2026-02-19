@@ -16,7 +16,7 @@ const projects = portfolio?.projects ?? [];
       </p>
     </div>
 
-    grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {projects.map((project) => (
         <article class="rounded-xl border border-gray-200 overflow-hidden bg-white shadow-sm hover:shadow-lg transition-shadow duration-300">
           <div class="relative aspect-video bg-gradient-to-br from-gray-100 to-gray-200">
