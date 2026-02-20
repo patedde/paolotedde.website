@@ -3,13 +3,13 @@
     "name": "Paolo Tedde",
     "role": "Digital Solutions Consultant",
     "tagline": "Ex-Microsoft & SEGA",
-    "location": "Sardegna, Italia",
+    "location": "Italia, Regno Unito",
     "email": "patedde@proton.me",
     "linkedin": "linkedin.com/in/paolo-tedde"
   },
   "hero": {
     "title": "La qualità del Software Internazionale nella tua attività locale",
-    "subtitle": "Siti Web ad alte prestazioni, app funzionali e soluzioni in Realtà Aumentata. L'esperienza di un ex-Project Manager in multinazionali del software, al servizio delle imprese sarde.",
+    "subtitle": "Siti Web ad alte prestazioni, app funzionali e soluzioni in Realtà Aumentata. L'esperienza di un ex-Project Manager in multinazionali del software, al servizio della tua impresa.",
     "ctaPrimary": "Scopri i Servizi",
     "ctaSecondary": "Richiedi Analisi Gratuita"
   },
@@ -21,12 +21,12 @@
     },
     {
       "title": "Visibilità Internazionale",
-      "description": "Esperto in localizzazione. Il tuo sito parlerà perfettamente al turista straniero, non come Google Translate.",
+      "description": "Esperto in localizzazione. Il tuo sito counicherà perfettamente con il turista straniero.",
       "icon": "Globe"
     },
     {
       "title": "Tecnologia Avanzata",
-      "description": "Sviluppo in C# e Unity. Porto innovazioni come la Realtà Aumentata (AR) nel tuo business.",
+      "description": "Sviluppo in C#, Unity. Porto innovazioni come la Realtà Aumentata (AR) nel tuo business.",
       "icon": "Cpu"
     }
   ],
@@ -39,7 +39,7 @@
       "features": [
         "Zero Commissioni grazie a sistemi proprietari",
         "Localizzazione perfetta multilingue per clienti internazionali",
-        "Automazione check-in, prenotazioni e messaggistica WhatsApp"
+        "Automazione check-in, prenotazioni e messaggistica"
       ]
     },
     {
@@ -78,7 +78,7 @@
   ],
   "portfolio": {
     "title": "Portfolio",
-    "subtitle": "Una selezione di progetti web pubblicati. Ogni scheda include una breve descrizione, stack usato e link diretto al sito live.",
+    "subtitle": "Una selezione di progetti pubblicati. Ogni scheda include una breve descrizione, stack usato e link diretto al sito live.",
     "projects": [
       {
         "name": "Sito Web per Professionisti",
@@ -91,7 +91,7 @@
       },
       {
         "name": "Piattaforma di booking",
-        "description": "Realizzazione di un ecosistema digitale per la ricezione turistica con modulo di prenotazione diretta. Architettura bilingue, integrazione di sistemi di pagamento certificati: il sito mira a disintermediare le prenotazioni dai portali terzi, migliorando i margini operativi e l'esperienza dell'utente finale.",
+        "description": "Un ecosistema digitale per la ricezione turistica con modulo di prenotazione diretta. Architettura bilingue, integrazione di sistemi di pagamento certificati, email automatizzate: il sito mira a disintermediare le prenotazioni dai portali terzi, migliorando i margini operativi e l'esperienza dell'utente finale.",
         "image": "/images/fiorivento.png",
         "stack": ["TypeScript", "Supabase", "Stripe"],
         "liveUrl": "https://www.ifioridelvento.com/it/",
@@ -124,9 +124,10 @@
   },
   "about": {
     "title": "Dal Global al Local",
-    "text": "Sono Paolo, uno sviluppatore con un background ibrido e variegato. Ho passato anni nel Regno Unito a gestire la qualità del software e la localizzazione per prodotti tripla-A in grandi studi di sviluppo come SEGA, Microsoft e Creative Assembly. Ho imparato che un dettaglio fuori posto può costare caro. Oggi uso gli strumenti piu' avanzati per portare quella stessa disciplina alle imprese locali, offrendo soluzioni che funzionano, vendono e stupiscono."
+    "text": "Sono Paolo, uno sviluppatore con un background ibrido e variegato. Ho passato anni nel Regno Unito a gestire la qualità del software e la localizzazione per prodotti tripla-A in grandi studi di sviluppo come SEGA, Microsoft e Creative Assembly. Ho imparato che un dettaglio fuori posto può costare caro. Oggi uso gli strumenti piu' avanzati per portare quella stessa qualità alle imprese locali, offrendo soluzioni che funzionano, vendono e stupiscono."
   }
 }
+
 
 
 
