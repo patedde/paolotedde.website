@@ -1,5 +1,10 @@
 ---
+import { Image } from 'astro:assets';
 import siteContent from '../data/siteContent.json';
+import webDevImage from '../assets/images/Webdev.png';
+import arObjImage from '../assets/images/AR_obj.png';
+import arLabImage from '../assets/images/AR_lab.png';
+import appDevImage from '../assets/images/appdev.png';
 const { services } = siteContent;
 
 const gradientClasses = [
@@ -10,10 +15,10 @@ const gradientClasses = [
 ];
 
 const serviceImages = [
-  '/images/Webdev.png',
-  '/images/AR_obj.png',
-  '/images/AR_lab.png',
-  '/images/appdev.png',
+  webDevImage,
+  arObjImage,
+  arLabImage,
+  appDevImage,
 ];
 ---
 
@@ -34,11 +39,15 @@ const serviceImages = [
         <div class={`flip-card h-[400px] ${index === 3 ? 'lg:col-start-2 xl:col-start-auto' : ''}`}>
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img
+              <Image
                 src={serviceImages[index]}
                 alt={service.title}
-                width="2816"
-                height="1536"
+                widths={[360, 720]}
+                sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                formats={['avif', 'webp']}
+                quality={65}
+                width={2816}
+                height={1536}
                 loading="lazy"
                 decoding="async"
                 class="w-full h-full object-cover"
