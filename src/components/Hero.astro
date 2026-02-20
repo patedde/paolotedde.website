@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import siteContent from '../data/siteContent.json';
+import heroImage from '../assets/images/hero.png';
 const { hero, personalInfo } = siteContent;
 ---
 
@@ -51,11 +53,15 @@ const { hero, personalInfo } = siteContent;
       <!-- Right Column: Hero Image -->
       <div class="relative lg:block">
         <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/images/hero.png"
+          <Image
+            src={heroImage}
             alt={personalInfo.name}
-            width="1792"
-            height="2400"
+            widths={[480, 768, 1024]}
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            formats={['avif', 'webp']}
+            quality={70}
+            width={1792}
+            height={2400}
             loading="eager"
             fetchpriority="high"
             decoding="async"
