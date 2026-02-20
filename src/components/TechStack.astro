@@ -7,31 +7,74 @@ const technologies = [
   { name: 'IA', color: 'from-teal-500 to-teal-700' },
   { name: 'Astro', color: 'from-orange-500 to-red-600' },
   
-  // Row 2 (New Items)
+  // Row 2
   { name: 'Tailwind CSS', color: 'from-cyan-500 to-blue-600' },
   { name: 'Firebase', color: 'from-yellow-500 to-orange-600' },
   { name: 'Flutter', color: 'from-blue-400 to-cyan-400' },
   { name: 'Git', color: 'from-red-600 to-orange-600' },
   { name: 'RESTful API', color: 'from-indigo-600 to-blue-800' },
 ];
+
+const comparison = [
+  { feature: 'Tempi di consegna', traditional: 'Settimane/Mesi di coding manuale', myMethod: 'Sviluppo accelerato tramite IA', benefit: 'Time-to-market ridotto' },
+  { feature: 'Investimento', traditional: 'Costi elevati per ore uomo', myMethod: 'Tariffe competitive', benefit: 'Risparmio economico netto' },
+  { feature: 'Qualità e Test', traditional: 'Debugging manuale post-consegna', myMethod: 'QA integrato e revisione critica', benefit: 'Codice solido e validato' },
+];
 ---
 
 <section id="tech" class="bg-gray-50 py-16 border-t border-gray-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
     <div class="text-center mb-12">
       <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-        Stack Tecnologico
+        Efficienza guidata dall'IA, Qualità garantita dall'esperienza
       </h2>
-      <p class="text-gray-600">
-        Strumenti professionali per risultati di livello enterprise
+      <p class="text-gray-600 max-w-3xl mx-auto text-lg">
+        Sfrutto le più avanzate tecnologie di Intelligenza Artificiale per ottimizzare i tempi di sviluppo e abbattere i costi, 
+        garantendo la massima precisione grazie a un solido background in <strong>Quality Assurance (QA)</strong>.
       </p>
+    </div>
+
+    <div class="mb-20 overflow-hidden rounded-xl border border-gray-200 shadow-sm bg-white">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-gray-900 text-white text-sm uppercase tracking-wider">
+              <th class="px-6 py-4 font-semibold text-center">Caratteristica</th>
+              <th class="px-6 py-4 font-semibold hidden md:table-cell text-center">Sviluppo Tradizionale</th>
+              <th class="px-6 py-4 font-semibold bg-teal-800 text-center">Il mio Metodo (IA + QA)</th>
+              <th class="px-6 py-4 font-semibold text-center">Il tuo Vantaggio</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 text-gray-700">
+            {comparison.map((item) => (
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-medium text-gray-900">{item.feature}</td>
+                <td class="px-6 py-4 hidden md:table-cell text-center text-gray-500">{item.traditional}</td>
+                <td class="px-6 py-4 bg-teal-50/50 font-semibold text-teal-900 text-center border-x border-teal-100">
+                  {item.myMethod}
+                </td>
+                <td class="px-6 py-4 font-medium text-gray-900 text-center">{item.benefit}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="bg-gray-50 px-6 py-3 italic text-sm text-gray-500 text-center border-t border-gray-200">
+        "Ogni riga di codice viene revisionata e validata per eliminare le imprecisioni tipiche dei modelli IA."
+      </div>
+    </div>
+
+    <div class="text-center mb-10">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Stack Tecnologico</h3>
+      <p class="text-gray-500">Strumenti professionali per risultati di livello enterprise</p>
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
       {technologies.map((tech) => (
         <div class="group">
           <div class={`bg-gradient-to-br ${tech.color} rounded-xl p-6 text-white text-center shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex items-center justify-center`}>
-            <div class="font-semibold text-sm sm:text-base">
+            <div class="font-semibold text-sm sm:text-base tracking-wide">
               {tech.name}
             </div>
           </div>
@@ -40,8 +83,11 @@ const technologies = [
     </div>
 
     <div class="mt-12 text-center">
-      <p class="text-sm text-gray-500">
-        E molte altre tecnologie per creare soluzioni su misura
+      <a href="#contatti" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors shadow-sm">
+        Ottieni un preventivo ottimizzato
+      </a>
+      <p class="mt-4 text-xs text-gray-400 uppercase tracking-widest">
+        Flessibilità su misura per ogni stack tecnologico
       </p>
     </div>
   </div>
