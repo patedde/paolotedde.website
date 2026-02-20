@@ -112,7 +112,7 @@
         "description": "Il progetto utilizza la Realtà Aumentata e la geolocalizzazione, permettendo la sovrapposizione di elementi digitali e meccaniche di gioco su scenari reali. L'architettura consente la configurazione di percorsi turistici, dove l'interazione dell'utente attiva contenuti multimediali e sfide interattive.",
         "image": "/images/qbadoo.png",
         "stack": ["Unity", "C#", "ARCore"],
-        "liveUrl": "https://www.qbadoo.world/",
+        "liveUrl": "",
         "detailsUrl": "#contatti",
         "codeUrl": ""
       }
@@ -127,6 +127,7 @@
     "text": "Sono Paolo, uno sviluppatore con un background ibrido e variegato. Ho passato anni nel Regno Unito a gestire la qualità del software e la localizzazione per prodotti tripla-A in grandi studi di sviluppo come SEGA, Microsoft e Creative Assembly. Ho imparato che un dettaglio fuori posto può costare caro. Oggi uso gli strumenti piu' avanzati per portare quella stessa qualità alle imprese locali, offrendo soluzioni che funzionano, vendono e stupiscono."
   }
 }
+
 
 
 
