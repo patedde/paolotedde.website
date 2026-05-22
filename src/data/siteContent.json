@@ -103,7 +103,7 @@
         "description": "App per la gestione avanzata di planimetrie digitali, permette all’utente di sovrapporre schemi elettrici direttamente su file sorgente. Grazie a un motore di esportazione integrato, il sistema genera documentazione tecnica in formato PDF, ottimizzando i tempi di progettazione.",
         "image": "/images/snap.png",
         "stack": ["JavaScript", "Vite", "React"],
-        "liveUrl": "https://snap-jet-kappa.vercel.app/",
+        "liveUrl": "https://www.planiwatt.com/",
         "detailsUrl": "#contatti",
         "codeUrl": ""
       },
